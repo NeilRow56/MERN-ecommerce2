@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Poppins&family=Redressed&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	.card {
+	}
+	.checkout-steps > div {
+		@apply border-b-4 border-[#a0a0a0];
+	}
+	.checkout-steps > div.active {
+		@apply border-b-4 border-[#f0c14b];
+	}
+}
