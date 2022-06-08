@@ -11,6 +11,7 @@ import ShippingAddressScreen from './screens/ShippingAddressScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import OrderHistoryScreen from './screens/OrderHistoryScreen';
 
 function App() {
 	return (
@@ -30,8 +31,13 @@ function App() {
 						element={<ShippingAddressScreen />}
 					/>
 					<Route path="/placeorder" element={<PlaceOrderScreen />} />
+					<Route
+						path="/orderhistory"
+						element={<OrderHistoryScreen />}
+					/>
 					<Route path="/payment" element={<PaymentMethodScreen />} />
 					<Route path="/order/:id" element={<OrderScreen />} />
+
 					<Route path="/" element={<HomeScreen />} />
 				</Routes>
 			</div>
